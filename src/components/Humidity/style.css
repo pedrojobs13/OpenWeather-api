@@ -1,0 +1,22 @@
+.description {
+  display: flex;
+  gap: 30px;
+  margin-top: 10%;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  color: #fff
+}
+
+.description_colaction {
+  background-color: #1a0611cd;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+  margin: 0 11px;
+}
+.description_colaction:nth-child(3){
+  text-transform: capitalize;
+}

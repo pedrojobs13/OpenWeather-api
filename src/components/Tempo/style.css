@@ -1,0 +1,14 @@
+.tempo {
+  font-size: 0.7rem;
+  padding: 10px;
+  color: #ffff;
+  
+}
+.tempo h3{
+    font-weight: 100;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
