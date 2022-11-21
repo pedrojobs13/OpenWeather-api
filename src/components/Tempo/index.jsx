@@ -5,14 +5,28 @@ export function Tempo() {
   useEffect(() => {
     function dataTime() {
       const minuto = new Date();
+      function sobZero(minuto) {
+        if (minuto.getDate() < 10) {
+          return `0${minuto.getDate()}`;
+        } else {
+          return `${minuto.getDate()}`;
+        }
+      }
+      function sobZeroMonth(minuto) {
+        if (minuto.getMonth() < 10) {
+          return `0${minuto.getMonth()}`;
+        } else {
+          return `${minuto.getMonth()}`;
+        }
+      }
       setTemp(
-        `0${minuto.getDate()} / 0${
-          1 + minuto.getMonth()
+        `${sobZero(minuto)} / ${
+          1 + Number(sobZeroMonth(minuto))
         } / ${minuto.getFullYear()}`
       );
     }
     dataTime();
-  },[]);
+  }, []);
   return (
     <div className="container">
       <div className="tempo">

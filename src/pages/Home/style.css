@@ -25,3 +25,15 @@
   z-index: -1;
   opacity: 0.95;
 }
+@media screen and (max-width: 767px) {
+  .background_image:before {
+    height: 115%;
+  }
+}
+
+.icon_temp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
